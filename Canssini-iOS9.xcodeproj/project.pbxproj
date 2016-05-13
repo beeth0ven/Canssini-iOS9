@@ -8,20 +8,22 @@
 
 /* Begin PBXBuildFile section */
 		45A758B61CE62AA500357B2E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45A758B51CE62AA500357B2E /* AppDelegate.swift */; };
-		45A758B81CE62AA500357B2E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45A758B71CE62AA500357B2E /* ViewController.swift */; };
+		45A758B81CE62AA500357B2E /* ImageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45A758B71CE62AA500357B2E /* ImageViewController.swift */; };
 		45A758BB1CE62AA500357B2E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 45A758B91CE62AA500357B2E /* Main.storyboard */; };
 		45A758BD1CE62AA500357B2E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 45A758BC1CE62AA500357B2E /* Assets.xcassets */; };
 		45A758C01CE62AA500357B2E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 45A758BE1CE62AA500357B2E /* LaunchScreen.storyboard */; };
+		45A758C91CE62AEB00357B2E /* DemoURL.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45A758C81CE62AEB00357B2E /* DemoURL.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		45A758B21CE62AA500357B2E /* Canssini-iOS9.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Canssini-iOS9.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		45A758B51CE62AA500357B2E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		45A758B71CE62AA500357B2E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		45A758B71CE62AA500357B2E /* ImageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageViewController.swift; sourceTree = "<group>"; };
 		45A758BA1CE62AA500357B2E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		45A758BC1CE62AA500357B2E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		45A758BF1CE62AA500357B2E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		45A758C11CE62AA500357B2E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		45A758C81CE62AEB00357B2E /* DemoURL.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DemoURL.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,13 +57,22 @@
 			isa = PBXGroup;
 			children = (
 				45A758B51CE62AA500357B2E /* AppDelegate.swift */,
-				45A758B71CE62AA500357B2E /* ViewController.swift */,
+				45A758B71CE62AA500357B2E /* ImageViewController.swift */,
 				45A758B91CE62AA500357B2E /* Main.storyboard */,
-				45A758BC1CE62AA500357B2E /* Assets.xcassets */,
-				45A758BE1CE62AA500357B2E /* LaunchScreen.storyboard */,
 				45A758C11CE62AA500357B2E /* Info.plist */,
+				45A758C71CE62AAB00357B2E /* Supprorting Files */,
 			);
 			path = "Canssini-iOS9";
+			sourceTree = "<group>";
+		};
+		45A758C71CE62AAB00357B2E /* Supprorting Files */ = {
+			isa = PBXGroup;
+			children = (
+				45A758C81CE62AEB00357B2E /* DemoURL.swift */,
+				45A758BC1CE62AA500357B2E /* Assets.xcassets */,
+				45A758BE1CE62AA500357B2E /* LaunchScreen.storyboard */,
+			);
+			name = "Supprorting Files";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -135,8 +146,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				45A758B81CE62AA500357B2E /* ViewController.swift in Sources */,
+				45A758B81CE62AA500357B2E /* ImageViewController.swift in Sources */,
 				45A758B61CE62AA500357B2E /* AppDelegate.swift in Sources */,
+				45A758C91CE62AEB00357B2E /* DemoURL.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
