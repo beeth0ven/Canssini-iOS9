@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		457252E51CE8D67700F74B25 /* Queue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 457252E41CE8D67700F74B25 /* Queue.swift */; };
+		457252E71CE8D80E00F74B25 /* CanssiniViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 457252E61CE8D80E00F74B25 /* CanssiniViewController.swift */; };
 		45A758B61CE62AA500357B2E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45A758B51CE62AA500357B2E /* AppDelegate.swift */; };
 		45A758B81CE62AA500357B2E /* ImageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45A758B71CE62AA500357B2E /* ImageViewController.swift */; };
 		45A758BB1CE62AA500357B2E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 45A758B91CE62AA500357B2E /* Main.storyboard */; };
@@ -16,6 +18,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		457252E41CE8D67700F74B25 /* Queue.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Queue.swift; sourceTree = "<group>"; };
+		457252E61CE8D80E00F74B25 /* CanssiniViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CanssiniViewController.swift; sourceTree = "<group>"; };
 		45A758B21CE62AA500357B2E /* Canssini-iOS9.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Canssini-iOS9.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		45A758B51CE62AA500357B2E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		45A758B71CE62AA500357B2E /* ImageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageViewController.swift; sourceTree = "<group>"; };
@@ -58,6 +62,7 @@
 			children = (
 				45A758B51CE62AA500357B2E /* AppDelegate.swift */,
 				45A758B71CE62AA500357B2E /* ImageViewController.swift */,
+				457252E61CE8D80E00F74B25 /* CanssiniViewController.swift */,
 				45A758B91CE62AA500357B2E /* Main.storyboard */,
 				45A758C11CE62AA500357B2E /* Info.plist */,
 				45A758C71CE62AAB00357B2E /* Supprorting Files */,
@@ -68,6 +73,7 @@
 		45A758C71CE62AAB00357B2E /* Supprorting Files */ = {
 			isa = PBXGroup;
 			children = (
+				457252E41CE8D67700F74B25 /* Queue.swift */,
 				45A758C81CE62AEB00357B2E /* DemoURL.swift */,
 				45A758BC1CE62AA500357B2E /* Assets.xcassets */,
 				45A758BE1CE62AA500357B2E /* LaunchScreen.storyboard */,
@@ -149,6 +155,8 @@
 				45A758B81CE62AA500357B2E /* ImageViewController.swift in Sources */,
 				45A758B61CE62AA500357B2E /* AppDelegate.swift in Sources */,
 				45A758C91CE62AEB00357B2E /* DemoURL.swift in Sources */,
+				457252E51CE8D67700F74B25 /* Queue.swift in Sources */,
+				457252E71CE8D80E00F74B25 /* CanssiniViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -300,6 +308,7 @@
 				45A758C61CE62AA500357B2E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

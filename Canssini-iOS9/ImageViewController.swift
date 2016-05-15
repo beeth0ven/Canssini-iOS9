@@ -8,14 +8,22 @@
 
 import UIKit
 
-class ImageViewController: UIViewController {
+class ImageViewController: UIViewController, UIScrollViewDelegate {
     
     var imageURL: NSURL? { didSet { fetchImage() } }
     
+    @IBOutlet weak var spinner: UIActivityIndicatorView!
     @IBOutlet weak var scrollView: UIScrollView! {
         didSet {
             scrollView.addSubview(imageView)
+            scrollView.minimumZoomScale = 0.03
+            scrollView.maximumZoomScale = 1
+            scrollView.contentSize = imageView.bounds.size
         }
+    }
+    
+    func viewForZoomingInScrollView(scrollView: UIScrollView) -> UIView? {
+        return imageView
     }
     
     let imageView = UIImageView()
@@ -25,27 +33,30 @@ class ImageViewController: UIViewController {
         set {
             imageView.image = newValue
             imageView.sizeToFit()
-            scrollView.contentSize = imageView.bounds.size
+            scrollView?.contentSize = imageView.bounds.size
         }
-    }
-    
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        imageURL = DemoURL.Stanford
     }
     
     private func fetchImage() {
         print(#function)
         image = nil
-        
-        if let
-            url = imageURL,
-            data = NSData(contentsOfURL: url),
-            image = UIImage(data: data) {
-            self.image = image
-            print("Image did get")
-
+        spinner?.startAnimating()
+        Queue.UserInitiated.execute { 
+            if let
+                url = self.imageURL,
+                data = NSData(contentsOfURL: url) {
+                Queue.Main.execute {
+                    self.spinner.stopAnimating()
+                    if url == self.imageURL {
+                        self.image = UIImage(data: data)
+                        print("Image did get")
+                    }
+                }
+            } else {
+                Queue.Main.execute { self.spinner.stopAnimating() }
+            }
         }
+        
     }
     
 }
